@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { use } from 'react';
 // import React,{useState} from 'react';
 import { useNavigate,Link } from 'react-router-dom';
-
+import OAuth from '../components/OAuth';
 
 const SignUp = () => {
 
@@ -67,6 +67,7 @@ const SignUp = () => {
       <button className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-80 disabled:opacity-0'>
         {loading ? 'Loading...' : 'Sign Up'}
       </button>
+      <OAuth/>
 
       </form>
 
